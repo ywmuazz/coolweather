@@ -1,0 +1,16 @@
+package com.example.android.gson;
+
+import com.google.gson.annotations.SerializedName;
+
+public class Basic {
+    @SerializedName("city")
+    public String cityName;
+    @SerializedName("id")
+    public String weatherIk;
+    public Update update;
+    public class Update{
+        @SerializedName("loc")
+        public String updateTime;
+
+    }
+}
